@@ -128,3 +128,36 @@ box-sizing: border-box changes how the width and height of elements are being ca
     - Flexbox is mainly meant for 1-dimensional layouts while Grid is meant for 2-dimensional layouts.
     - Flexbox solves many common problems in CSS, such as vertical centering of elements within a container, sticky footer, etc. Bootstrap and Bulma are based on Flexbox, and it is probably the recommended way to create layouts these days. Have tried Flexbox before but ran into some browser incompatibility issues (Safari) in using flex-grow, and I had to rewrite my code using inline-blocks and math to calculate the widths in percentages, it wasn't a nice experience.
     - Grid is by far the most intuitive approach for creating grid-based layouts (it better be!) but browser support is not wide at the moment.
+## JavaScript
+1. Explain event delegation
+    - Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM.
+2. Explain how this works in JavaScript
+    - The value of this depends on how the function is called.
+        - If the new keyword is used when calling the function, this inside the function is a brand new object.
+        - If apply, call, or bind are used to call/create a function, this inside the function is the object that is passed in as the argument.
+        - If a function is called as a method, such as obj.method() — this is the object that the function is a property of.
+        - If a function is invoked as a free function invocation, meaning it was invoked without any of the conditions present above, this is the global object. In a browser, it is the window object. If in strict mode ('use strict'), this will be undefined instead of the global object.
+        - If multiple of the above rules apply, the rule that is higher wins and will set the this value.
+        - If the function is an ES2015 arrow function, it ignores all the rules above and receives the this value of its surrounding scope at the time it is created.
+3. Explain how prototypal inheritance works
+    - All JavaScript objects have a prototype property, that is a reference to another object. When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object's prototype, and the prototype's prototype and so on, until it finds the property defined on one of the prototypes or until it reaches the end of the prototype chain. 
+4. What's the difference between a variable that is: null, undefined or undeclared? How would you go about checking for any of these states?
+    - `Undeclared` variables are created when you assign a value to an identifier that is not previously created using var, let or const.
+    - `Undefined` is a variable that has been declared, but not assigned a value
+    - `null` will have been explicitly assigned to the null value. It represents no value and is different from undefined in the sense that it has been explicitly assigned. 
+5. What is a closure, and how/why would you use one?
+    - A closure gives you access to an outer function's scope from an inner function
+    - You would use it for Data Privacy
+6. Can you describe the main difference between a .forEach loop and a .map() loop and why you would pick one versus the other?
+    - `.forEach` - iterates through the array and executes a callback on each element
+    - `.map` - iterates through an array and returns a new array without mutating the original
+7. What's a typical use case for anonymous functions?
+    - They can be used in IIFEs to encapsulate some code within a local scope so that variables declared in it do not leak to the global scope.
+    - As a callback that is used once and does not need to be used anywhere else. The code will seem more self-contained and readable when handlers are defined right inside the code calling them, rather than having to search elsewhere to find the function body.
+8. What's the difference between host objects and native objects?
+    - Native objects are objects that are part of the JavaScript language defined by the ECMAScript specification, such as String, Math, RegExp, Object, Function, etc.
+    - Host objects are provided by the runtime environment (browser or Node), such as window, XMLHTTPRequest, etc.
+9. Explain Ajax in as much detail as possible.
+    - Ajax (asynchronous JavaScript and XML) is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for web pages, and by extension web applications, to change content dynamically without the need to reload the entire page.
+10. Explain "hoisting"
+    - 
