@@ -107,9 +107,9 @@ box-sizing: border-box changes how the width and height of elements are being ca
     - `block`: The element consumes the whole line in the block direction (which is usually horizontal)
     - `inline`: Elements can be laid out beside each other
     - `inline-block`: Similar to inline, but allows some block properties like setting width and height
-    - `table`: Behaves like the <table> element
-    - `table-row` `table-cell` `list-item`: Behaves like its corresponding element
-    
+    - `table`: Behaves like the `<table>` element
+    - `table-row table-cell list-item`: Behaves like its corresponding element
+
 29. What's the difference between inline and inline-block?
     - Inline block can set width and height
     - Inline block can set margin and paddings on all sides. Inline can only set on horizontal sides.
