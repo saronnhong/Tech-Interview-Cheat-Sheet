@@ -109,6 +109,7 @@ box-sizing: border-box changes how the width and height of elements are being ca
     - `inline-block`: Similar to inline, but allows some block properties like setting width and height
     - `table`: Behaves like the <table> element
     - `table-row` `table-cell` `list-item`: Behaves like its corresponding element
+    
 29. What's the difference between inline and inline-block?
     - Inline block can set width and height
     - Inline block can set margin and paddings on all sides. Inline can only set on horizontal sides.
@@ -130,6 +131,7 @@ box-sizing: border-box changes how the width and height of elements are being ca
     - Grid is by far the most intuitive approach for creating grid-based layouts (it better be!) but browser support is not wide at the moment.
 
 ## JavaScript
+
 34. Explain event delegation
     - Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM.
 35. Explain how this works in JavaScript
