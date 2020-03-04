@@ -267,6 +267,6 @@ box-sizing: border-box changes how the width and height of elements are being ca
 -   [RoboCat Example](https://github.com/saronnhong/robocat/blob/master/src/server/server.js)
 -   [Mongo Scraper Example](https://github.com/saronnhong/mongo-scraper/blob/master/server.js)
 ## Data Structures and Algorithms
--   [Cheat Sheet Link](https://github.com/TSiege/Tech-Interview-Cheat-Sheet)
+-   [TSeige Cheat Sheet](https://github.com/TSiege/Tech-Interview-Cheat-Sheet)
 ## Front End Interview Questions
 -   [HTML/CSS/JavaScript Cheat Sheet](https://github.com/yangshun/front-end-interview-handbook)
