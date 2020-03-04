@@ -250,3 +250,23 @@ box-sizing: border-box changes how the width and height of elements are being ca
     - On the server (Node.js), the common way has been to use CommonJS. Each file is treated as a module and it can export variables and functions by attaching them to the `module.exports` object.
 66. Why you might want to create static class members?
     - Static class members (properties/methods) are not tied to a specific instance of a class and have the same value regardless of which instance is referring to it. Static properties are typically configuration variables and static methods are usually pure utility functions which do not depend on the state of the instance.
+## HTTP Request
+-   [ChowFeed $.AJAX Example](https://github.com/saronnhong/ChowFeed/blob/master/assets/javascript/app.js)
+## RESTful API
+-   Representational state transfer (REST) is a software architectural style that defines a set of constraints to be used for creating Web services. Web services that conform to the REST architectural style, called RESTful Web services, provide interoperability between computer systems on the Internet. RESTful Web services allow the requesting systems to access and manipulate textual representations of Web resources by using a uniform and predefined set of stateless operations.
+## SQL vs NoSQL
+-   Scalability: `SQL` is vertically scalable. This means that you can increase the load on a single server by increasing things like RAM, CPU or SSD. `NoSQL` is horizontally scalable. This means that you handle more traffic by sharding, or adding more servers in your NoSQL database.
+## CRUD 
+- Create: "POST" / 
+- Read: "GET"
+- Update: "PUT"
+- Delete: "DELETE"
+-   [Movie Gen Example](https://github.com/saronnhong/movie_gen/blob/master/routes/apiRoutes.js)
+-   [DANI Example](https://github.com/saronnhong/dani/blob/master/client/src/utils/API.js)
+## Web Scrape
+-   [RoboCat Example](https://github.com/saronnhong/robocat/blob/master/src/server/server.js)
+-   [Mongo Scraper Example](https://github.com/saronnhong/mongo-scraper/blob/master/server.js)
+## Data Structures and Algorithms
+-   [Cheat Sheet Link](https://github.com/TSiege/Tech-Interview-Cheat-Sheet)
+## Front End Interview Questions
+-   [HTML/CSS/JavaScript Cheat Sheet](https://github.com/yangshun/front-end-interview-handbook)
